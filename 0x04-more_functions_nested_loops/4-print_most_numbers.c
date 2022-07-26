@@ -1,21 +1,18 @@
 #include "main.h"
 /**
-* print_most_numbers -  checks for checks for a digit (0 through 9).
-*
-* Return: Always 0.
+* print_most_numbers - prints the numbers, from 0 to 9, followed by a new line
+* Return: 0
 */
 void print_most_numbers(void)
 {
-int a;
-for (a = 48; a < 58; a++)
+char n = 0;
+while (n <= 9)
 {
-if (a != 50)
+if (n != 2 && n != 4)
 {
-if (a != 52)
-{
-_putchar(a);
+_putchar('0' + n);
 }
-}
+n++;
 }
 _putchar('\n');
 }

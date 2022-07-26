@@ -1,31 +1,24 @@
 #include "main.h"
 /**
-* print_diagonal -  checks for checks for a digit (0 through 9).
-* @n: n -  Variable
-*
-* Return: Always 0.
+*  * print_diagonal - checks for digit
+* @n: number of \\ to be printed
+* Return: void
 */
 void print_diagonal(int n)
 {
-int x, y;
-if (n > 0)
+int i = 0, ii;
+while (i < n && n > 0)
 {
-for (x = 1; x <= n; x++)
+ii = 0;
+while (ii < i)
 {
-for (y = 1; y <= n; y++)
-{
-if (x == y)
-{
-_putchar(92);
-break;
-}
 _putchar(' ');
+ii++;
 }
+_putchar('\\');
 _putchar('\n');
+i++;
 }
-}
-else
-{
+if (i == 0)
 _putchar('\n');
-}
 }

@@ -1,32 +1,29 @@
 #include "main.h"
 /**
-* print_triangle -  checks for checks for a digit (0 through 9).
-* @size: size -  Variable
-* Return: Always 0.
+* print_triangle - check
+* @size : integer type
+* Retutn: void
 */
 void print_triangle(int size)
 {
-int x, y;
-if (size > 0)
+int i = 1, ii;
+while (i <= size && size > 0)
 {
-for (x = 1; x <= size; x++)
-{
-for (y = 1; y <= size; y++)
-{
-if (y <= size - x)
+ii = 0;
+while (ii < size - i)
 {
 _putchar(' ');
+ii++;
 }
-else
+ii = 0;
+while (ii < i)
 {
 _putchar('#');
-}
+ii++;
 }
 _putchar('\n');
+i++;
 }
-}
-else
-{
+if (i == 1)
 _putchar('\n');
-}
 }

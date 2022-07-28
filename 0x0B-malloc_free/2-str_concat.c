@@ -3,10 +3,9 @@
 #include <stdio.h>
 /**
 *str_concat - concatenates 2 strings.
-* a NULL string is treated as an empty string.
+*a NULL string is treated as an empty string.
 *@s1: pointer to string.
 *@s2: pointer to string.
-*
 *Return: pointer to newly allocated memory which
 *has s1, s2 and null byte.
 *NULL on failure.
